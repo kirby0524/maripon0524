@@ -13,6 +13,7 @@
 */
 Route::get('/', 'PostController@index');
 Route::get('/posts/create', 'PostController@create');
+Route::delete('/posts/{post}', 'PostController@delete');
 Route::get('/posts/{post}', 'PostController@show');
 
 Route::post('/posts', 'PostController@store');
